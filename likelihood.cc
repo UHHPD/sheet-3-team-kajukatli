@@ -27,7 +27,9 @@ int main()
 {
   double mu = 3.11538;
   vector<int> daten;
+  double nll;
   ifstream fin("datensumme.txt");
+  ofstream fout("likelihood.txt");
   int zahl,i; 
   for(i=0;i<234;i++)
   {
@@ -40,10 +42,16 @@ int main()
   //{
    // cout<<daten[j]<<"\n";
   //}
-  double result = 1.0;
-  for (int i=0;i<234;++i)
+  //double mu;
+  for ( mu=0;mu<6;mu=mu+0.1)
   {
-    result= result*prob(daten, mu, i);
-  }   
-  cout << result << endl;
+    double result = 1.0;
+    for (int i=0;i<234;++i)
+    {
+      result= result*prob(daten, mu, i);
+    }
+    //cout<<result;
+    fout<<mu<<" "<< result << endl;
+  }
+  fout.close();
 }
