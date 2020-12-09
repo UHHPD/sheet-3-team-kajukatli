@@ -43,6 +43,14 @@ int main()
    // cout<<daten[j]<<"\n";
   //}
   //double mu;
+  // exercise 2a
+  double result=1.0;
+  for(int j=0;j<234;++j)
+  {
+    result= result*prob(daten, mu, j);
+  }
+  cout<<result;
+  // exercise 2b
   for ( mu=0;mu<6;mu=mu+0.1)
   {
     double result = 1.0;
