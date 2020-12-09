@@ -104,12 +104,12 @@ int main()
     result4 = result4*prob_1(daten_1,i);
     Lambda= result_1/result4;
   }
-  cout<< Lambda<<endl;
+  //cout<< Lambda<<endl;
   double del_lambda=-2*log(Lambda);
-  //cout<< del_lambda<<endl;
+  cout<< del_lambda<<endl;
   //mean= del_lambda/234.0;
   //cout << mean << endl;
-  double std_dev=sqrt(2*ndof);
-  double z= (del_lambda-ndof)/std_dev;
-  cout<< z<<endl;
+  //double std_dev=sqrt(2*ndof);
+  //double z= (del_lambda-ndof)/std_dev;
+  //cout<< z<<endl;
 }
