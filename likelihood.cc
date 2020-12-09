@@ -66,7 +66,7 @@ int main()
     double mu =3.11538;
     result= result*prob(daten,mu,j);
   }
-  //cout<<result;
+  cout<<result<<endl;
   double result_1=7.76841e-195;
 
   // exercise 2b and exercise 2c
